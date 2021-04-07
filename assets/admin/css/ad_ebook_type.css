@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.tb-hover-row:hover {
+	cursor: pointer;
+}
+
+.showtbetype a {
+	color: white;
+	padding: 2px 10px;
+}
+
+.showtbetype a:hover {
+	color: black;
+}

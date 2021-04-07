@@ -1,0 +1,298 @@
+/******************* ทุกส่วน ***************/
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a:hover {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.logoutmenu {
+	color: whitesmoke;
+	display: flex;
+	flex-wrap: wrap;
+	float: right;
+	height: 40px;
+	text-align: center;
+	text-justify: center;
+}
+
+.logoutmenu li {
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.logoutmenu li:last-child {
+	background-color: red;
+}
+
+body {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(32, 32, 32);
+}
+
+header a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.menu a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.category a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+li {
+	list-style: none;
+}
+
+.container-group {
+	min-height: 100vh;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: -181px;
+	display: block;
+}
+
+.site-footer .boxfooter {
+	height: 181px;
+	background-color: red;
+}
+
+/******************* ส่วนหัวโปรแกรม ***************/
+header {
+	background-color: #26272b;
+	padding: 10px;
+	min-height: 40px;
+	overflow: hidden;
+}
+
+.logo {
+	border-radius: 10px;
+	float: left;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px;
+	background-color: #7e0000;
+}
+
+nav.main-menu {
+	float: right;
+}
+
+nav.main-menu ul {
+	display: flex;
+	justify-content: center;
+}
+
+nav.main-menu ul li {
+	padding: 10px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+nav.main-menu ul li:hover {
+	background-color: #5a0000;
+	border-radius: 50px;
+	text-shadow: 0 0 0.5em white;
+}
+
+nav.main-menu ul li.register {
+	border-radius: 4px;
+	background-color: rgb(185, 0, 0);
+}
+
+nav.main-menu ul li.register:hover {
+	text-shadow: 0 0 0.5em white;
+}
+
+.menu {
+	background-color: rgb(133, 0, 0);
+	display: flex;
+	justify-content: center;
+}
+
+.menu ul li {
+	display: inline-block;
+	padding: 4px 8px;
+}
+
+.menu ul li:hover {
+	background-color: #5a0000;
+	border-radius: 50px;
+	text-shadow: 0 0 0.5em white;
+}
+
+.img-header {
+	background-image: url(../img/bg/book.jpg);
+	height: 100px;
+	padding: 50px;
+}
+
+h2.text-header {
+	/* margin-top: 40px; */
+	font-size: 3rem;
+}
+
+.text-header {
+	text-shadow: 0 0 0.2em rgb(53, 53, 53);
+	stroke-width: 40px;
+	text-align: center;
+}
+/******************* dashboard ***************/
+.container-group-dash {
+	display: block;
+	min-height: 100vh;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: -60px;
+}
+
+.forfooter-dash {
+	height: 60px;
+}
+
+.dash-footer {
+	display: flex;
+	background-color: #26272b;
+	padding: 20px;
+	font-size: 15px;
+	color: #dddddd;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+}
+
+h2.dash-footer {
+	text-align: center;
+}
+/******************* ส่วนรายละเอียดด้านล่าง ***************/
+footer a {
+	color: whitesmoke;
+}
+
+.forfooter {
+	height: 181px;
+}
+
+.site-footer {
+	display: block;
+	background-color: #26272b;
+	padding: 45px 0 20px;
+	font-size: 15px;
+	color: #dddddd;
+}
+
+h2.footer {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: -20px;
+}
+
+.site-footer hr {
+	border-top-color: #bbb;
+	opacity: 0.5;
+	margin-bottom: 10px;
+}
+
+.site-footer .container-footer .row {
+	display: grid;
+	grid-template-areas: "media address";
+	padding: 0 10%;
+}
+
+.fa-facebook-official {
+	color: #3855ca;
+}
+
+.site-footer .container-footer .row .colum1 {
+	grid-area: "media";
+	display: flex;
+	float: left;
+}
+
+.site-footer .container-footer .row .colum1 .link {
+	margin-left: 10px;
+}
+
+.site-footer .container-footer .row .colum1 .link li {
+	padding: 10px;
+}
+
+.container-footer .row .colum1 .link li {
+	display: grid;
+	grid-template-columns: 24px 1fr;
+	align-items: center;
+}
+
+.site-footer .container-footer .row .colum1 .link li:first-child {
+	padding-top: 0px;
+}
+
+.site-footer .container-footer .row .colum2 {
+	grid-area: "address";
+	display: flex;
+}
+
+.site-footer .container-footer .row .colum2 .address-img {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+/* **************login *************** */
+.login {
+	box-sizing: border-box;
+	color: black;
+	margin: auto;
+	padding: 10px;
+	max-width: 1190px;
+	min-height: 75vh;
+	background-color: #dbdbdb;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.login button {
+	color: whitesmoke;
+	cursor: pointer;
+	padding: 0 10px;
+	background-color: rgb(153, 0, 0);
+	font-size: 20px;
+	margin-right: 60px;
+}
+
+.login h1 {
+	margin-bottom: 30px;
+}
+
+.login table {
+	margin-bottom: 20px;
+}
+
+.login td {
+	text-align: left;
+}
+
+.login .loginform table {
+	font-size: 20px;
+}
+
+.login .loginform table input {
+	padding: 5px;
+	font-size: 20px;
+}
+
+.login .loginform form {
+	text-align: right;
+}

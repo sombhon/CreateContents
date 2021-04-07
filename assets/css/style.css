@@ -1,0 +1,561 @@
+/****************** แก้ปัญหาขอบฝั่งขวาเกิน   ******************/
+
+/******************* ทุกส่วน ***************/
+@import
+	url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap')
+	;
+
+* {
+	font-family: Sarabun, serif, monospace;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-head {
+	/*transition: background  ease-in;*/
+	background: #DB1F2A;
+}
+
+.nav-head:hover {
+	background: #A12830;
+}
+
+.forfooter {
+	height: 181px;
+}
+
+body {
+	color: rgb(14, 14, 14);
+}
+
+a {
+	color: rgb(32, 32, 32);
+}
+
+footer a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+header a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.menu a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.category a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.container-group {
+	min-height: calc(100vh - 208px);
+	background-image: url("../uploads/images/bg/background-body.jsp");
+	background-color: rgb(255, 255, 255);
+	display: block;
+	color: #080808;
+}
+
+.boxfooter {
+	height: 181px;
+	background-color: red;
+}
+/* กำหนดเรทติ้งดาว */
+.star-late-show {
+	color: yellow;
+	margin: 0px;
+}
+
+.text-star {
+	color: white;
+	font-weight: bloder;
+}
+
+.homepage .card-footer {
+	background: Gray;
+}
+/* **************header-body************** */
+.text-header {
+	stroke-width: 40px;
+	text-align: center;
+	color: menu;
+	text-shadow: 0.05em 0.1em #000000;
+}
+
+.header-body {
+	background-image: url("../uploads/images/bg/book.jpg");
+	min-height: 200px;
+	padding: 20px;
+}
+
+h2.text-header {
+	/* margin-top: 40px; */
+	font-size: 5rem;
+	font-weight: 900;
+}
+
+/*************** aside right ****************/
+.colum3 .score, .cart {
+	color: Black;
+}
+/* **************** packread ******************** */
+.packread .bookreview>p {
+	text-align: end;
+}
+
+.packread .bookreview {
+	margin-top: 30px;
+}
+
+.packread .box-book {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	background-color: #5c5c5c;
+	padding: 10px;
+}
+
+.packread .box-book .re-box {
+	box-sizing: border-box;
+}
+
+.packread .box {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: 350px 350px;
+	background-color: #838383;
+	width: 1190px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.packread .box .re-box img {
+	max-width: 100%;
+	height: 220px;
+}
+
+.packread  .box .re-box p {
+	font-weight: 800;
+}
+
+.packread .box .re-box .detailsbook {
+	text-align: center;
+	background-color: #525252;
+	color: white;
+}
+
+.packread .box .re-box .detailsbook .head {
+	font-size: 12px;
+	background-color: #1b1b1b;
+	padding: 5px;
+}
+
+.packread .box .re-box .detailsbook .price {
+	margin: 5px;
+	background-color: #5a0000;
+	font-size: 18px;
+	color: white;
+}
+
+.packread .box .re-box .detailsbook .sale {
+	display: grid;
+	grid-template-columns: 2.8fr 1fr;
+	align-items: center;
+}
+
+.packread .box .re-box .fa {
+	font-size: 30px;
+}
+
+.packread {
+	box-sizing: border-box;
+	margin: 0 auto;
+	background-color: gray;
+	min-height: 75vh;
+	padding: 10px;
+}
+
+.packread>.paper {
+	padding: 10px;
+	color: black;
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+	justify-items: center;
+	background-color: white;
+}
+
+.packread .paper h2 {
+	margin-bottom: 20px;
+}
+
+.packread .packreader {
+	display: grid;
+	grid-template-columns: 300px 100px 80px;
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	margin-top: 10px;
+	background-color: #aa3600;
+	padding: 2px;
+}
+
+.packread .name {
+	text-align: left;
+	padding: 10px 20px;
+}
+
+.packread .price {
+	padding: 10px 20px;
+	text-align: center;
+	text-justify: center;
+	background-color: white;
+	color: #080808;
+}
+
+.packread .buy {
+	padding: 10px 20px;
+	text-align: center;
+}
+
+/* **************** สมัครสมาชิก Register ******************** */
+.register .colum {
+	padding: 20px 40px;
+}
+
+.register input {
+	font-size: 16px;
+	padding: 5px;
+	margin: 10px 10px 10px 0px;
+}
+
+.register h2 {
+	text-align: center;
+}
+
+.register input, textarea {
+	border: 0px;
+}
+
+.register .submit {
+	text-align: center;
+}
+
+.register .submit button {
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	font-weight: 800;
+	color: white;
+	background-color: #49392b;
+}
+/******************* ส่วนหัวโปรแกรม ***************/
+header {
+	background-color: #CA002A;
+	padding: 10px;
+	min-height: 40px;
+	overflow: hidden;
+}
+
+header .navbar {
+	background-color: #A12830;
+}
+
+header ul li a.register {
+	border-radius: 4px;
+	background-color: #DB1F2A;
+	color: white !important;
+}
+
+.menu {
+	background-color: rgb(133, 0, 0);
+	justify-content: center;
+}
+
+.menu ul li:hover {
+	background-color: #5a0000;
+	text-shadow: 0 0 0.5em white;
+}
+
+/******************* ส่วนรายละเอียดด้านล่าง ***************/
+.site-footer {
+	display: block;
+	background-color: #26272b;
+	padding: 45px 0 20px;
+	font-size: 15px;
+	color: #dddddd;
+}
+
+h2.footer {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: -20px;
+}
+
+.site-footer hr {
+	border-top-color: #bbb;
+	opacity: 0.5;
+	margin-bottom: 10px;
+}
+
+.site-footer .container-footer .rowft {
+	display: grid;
+	grid-template-areas: "media address";
+	padding: 0 10%;
+}
+
+.fa-facebook-official {
+	color: #3855ca;
+}
+
+.site-footer .container-footer .rowft .colum1 {
+	grid-area: "media";
+	display: flex;
+	float: left;
+}
+
+.site-footer .container-footer .rowft .colum1 .link {
+	margin-left: 10px;
+}
+
+.site-footer .container-footer .rowft .colum1 .link li {
+	padding: 10px;
+}
+
+.container-footer .rowft .colum1 .link li {
+	display: grid;
+	grid-template-columns: 24px 1fr;
+	align-items: center;
+}
+
+.site-footer .container-footer .rowft .colum1 .link li:first-child {
+	padding-top: 0px;
+}
+
+.site-footer .container-footer .rowft .colum2 {
+	grid-area: "address";
+	display: flex;
+}
+
+.site-footer .container-footer .rowft .colum2 .address-img {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+/* ************** aside left / SideBar ซ้าย ************** */
+.aside-left {
+	background-color: #e4e4e4;
+	width: 100%;
+	padding: 10px;
+	position: sticky;
+	top: 10px;
+}
+
+.aside-left form {
+	display: grid;
+	grid-template-columns: 30px auto;
+	align-items: center;
+}
+
+.aside-left .search {
+	padding: 5px;
+	background-color: #26272b;
+}
+
+.aside-left .category {
+	background-color: #26272b;
+	padding: 5px;
+}
+
+.aside-left .category h3 {
+	font-size: 16px;
+}
+
+.aside-left .category a {
+	color: Gainsboro;
+}
+
+.aside-left .category a:hover {
+	color: white;
+}
+
+/* ************ เนื้อหากลาง ************* */
+.card-body {
+	padding: 10px;
+}
+
+.hompage h5 {
+	margin: 0 !important;
+}
+
+.content-body {
+	margin-top: 20px;
+}
+
+.main-contain .colum2 {
+	background-color: #e4e4e4;
+	color: #080808;
+}
+
+.main-contain .colum2 .container-index {
+	margin-top: 10px;
+}
+
+.main-contain .colum2 section {
+	background-color: #b4b4b4;
+	border-radius: 10px;
+}
+
+.main-contain .colum2 {
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+}
+
+.main-contain .colum2 .box {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 10px;
+	padding: 5px 10px;
+}
+
+.main-contain .colum2 .box .re-box {
+	margin: auto auto;
+}
+
+.main-contain .colum2 .box .re-box img {
+	max-width: 100%;
+	min-height: 150px;
+}
+
+.main-contain .colum2 .box .re-box p {
+	font-weight: 800;
+}
+
+.box .re-box .detailsbook {
+	text-align: center;
+	background-color: #525252;
+	color: white;
+}
+
+.box .re-box .detailsbook .head {
+	font-size: 12px;
+	background-color: #1b1b1b;
+}
+
+.box .re-box .detailsbook .price {
+	margin: 5px;
+	background-color: #5a0000;
+	font-size: 12px;
+}
+
+.box .re-box .detailsbook .sale {
+	display: grid;
+	grid-template-columns: 2.8fr 1fr;
+	align-items: center;
+}
+/* ******************sidebar ขวา**************** */
+.colum3 {
+	background-color: #e4e4e4;
+	display: grid;
+	grid-template-rows: 100px 80px auto;
+	grid-row-gap: 10px;
+}
+
+.colum3 .score {
+	padding: 10px;
+	background-color: #1b1b1b;
+}
+
+.colum3 .score h3 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.colum3 .score .textbox {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	font-size: 14px;
+}
+
+.colum3 .cart {
+	display: grid;
+	grid-template-columns: 6fr 1fr;
+	padding: 10px;
+	background-color: #1b1b1b;
+	align-items: center;
+}
+
+.colum3 .cart .cartbox {
+	background-color: rgb(175, 105, 0);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	align-items: center;
+	padding: 3px 5px;
+}
+
+.colum3 .cart .icon {
+	background-color: #5a0000;
+	padding: 4px 5px;
+}
+
+/* **************login *************** */
+.login {
+	box-sizing: border-box;
+	color: black;
+	margin: auto;
+	padding: 10px;
+	max-width: 1190px;
+	min-height: 75vh;
+	background-color: #dbdbdb;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.login button {
+	color: whitesmoke;
+	cursor: pointer;
+	padding: 0 10px;
+	background-color: rgb(153, 0, 0);
+	font-size: 20px;
+	margin-right: 60px;
+}
+
+.login h1 {
+	margin-bottom: 30px;
+}
+
+.login table {
+	margin-bottom: 20px;
+}
+
+.login td {
+	text-align: left;
+}
+
+.login .loginform table {
+	font-size: 20px;
+}
+
+.login .loginform table input {
+	padding: 5px;
+	font-size: 20px;
+}
+
+.login .loginform form {
+	text-align: right;
+}
+
+ebook {
+	background-color: blue !important;
+	color: red;
+}
+
+@media ( min-width : 992px) {
+}
